@@ -1,0 +1,101 @@
+# GEOOBS-AI — Geometric Earth Observation Intelligence System
+
+## Overview
+
+GEOOBS-AI is a scientific platform for generating, evaluating, and managing geometric observables from satellite imagery using artificial intelligence and classical computer vision methods.
+
+The system is oriented toward the technical objectives of the EUMETSAT Study EUM2026956 (v2, 7 August 2026) on the creation of observables through AI/ML methods.
+
+## Current Status: Alpha v0.1.0
+
+### What is operational
+
+- ✅ Full web interface with 15 scientific screens
+- ✅ Synthetic data generation with known geometric displacements
+- ✅ Shi-Tomasi corner detection (TypeScript implementation)
+- ✅ ORB feature detection (FAST + BRIEF, TypeScript implementation)
+- ✅ Feature matching with Hamming distance
+- ✅ RANSAC affine estimation
+- ✅ Observable generation with full metadata schema
+- ✅ Geometric Quality Assessment (GQA) metrics
+- ✅ Export to JSON, CSV, and plain text reports
+- ✅ Complete audit trail and traceability
+- ✅ Deterministic synthetic test suite
+
+### What is pending
+
+- ⏳ FCI/METimage native format adapters (requires Python/xarray)
+- ⏳ Backend API (Node.js/Fastify)
+- ⏳ Scientific service (Python/FastAPI)
+- ⏳ Deep learning detectors (PyTorch: SuperPoint, R2D2, LoFTR)
+- ⏳ ONNX model export and inference
+- ⏳ Docker Compose deployment
+- ⏳ PostgreSQL and S3 storage integration
+- ⏳ Validation with authentic EUMETSAT products
+- ⏳ GSoW EUM/RSP/SOW/18/985385 review
+
+## Quick Start
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Architecture
+
+```
+frontend/          React + TypeScript + Vite + Tailwind
+backend/           Node.js + Fastify (planned)
+scientific/        Python + FastAPI + OpenCV + PyTorch (planned)
+docs/              Technical documentation
+```
+
+## Scientific Engine
+
+The TypeScript scientific engine implements:
+
+1. **Shi-Tomasi Corner Detection**: Minimum eigenvalue of the structure tensor with non-maximum suppression
+2. **ORB Detection**: FAST keypoint detection + BRIEF binary descriptors
+3. **Feature Matching**: Hamming distance with Lowe's ratio test
+4. **RANSAC**: Robust affine estimation with configurable iterations and threshold
+5. **Observable Generation**: Canonical records with full provenance metadata
+6. **GQA Computation**: Bias, RMSE, percentiles, spatial coverage, dispersion
+
+## Synthetic Data
+
+The system generates deterministic test scenes with:
+- Known geometric displacements (ground truth)
+- Configurable noise levels
+- Cloud contamination simulation
+- Terrain-like features for detection
+
+This enables validation of displacement estimation accuracy against known truth.
+
+## Documentation
+
+- [ARCHITECTURE.md](docs/ARCHITECTURE.md) — System architecture
+- [OBSERVABLE_SCHEMA.md](docs/OBSERVABLE_SCHEMA.md) — Observable data model
+- [ML_METHODOLOGY.md](docs/ML_METHODOLOGY.md) — ML approach and limitations
+- [GEOMETRIC_QUALITY_ASSESSMENT.md](docs/GEOMETRIC_QUALITY_ASSESSMENT.md) — GQA methodology
+- [EUMETSAT_REQUIREMENTS_TRACEABILITY.md](docs/EUMETSAT_REQUIREMENTS_TRACEABILITY.md) — Requirements matrix
+- [SECURITY_AND_SOVEREIGNTY.md](docs/SECURITY_AND_SOVEREIGNTY.md) — Security principles
+- [KNOWN_LIMITATIONS.md](docs/KNOWN_LIMITATIONS.md) — Current limitations
+- [TEST_REPORT.md](docs/TEST_REPORT.md) — Test results
+
+## License
+
+This project is developed as an independent scientific tool. No EUMETSAT proprietary code is included. All algorithms are independently implemented or use open-source libraries with compatible licenses.
+
+## Disclaimer
+
+This system has NOT been validated with authentic EUMETSAT FCI or METimage products. No claim of operational compliance with EUMETSAT requirements is made until:
+1. Authentic products are obtained and format specifications verified
+2. GSoW EUM/RSP/SOW/18/985385 is fully reviewed
+3. Complete Statement of Work requirements are mapped and validated
+4. Results are evaluated by qualified domain experts
