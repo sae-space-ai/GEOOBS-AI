@@ -13,6 +13,7 @@ import { GQAEvaluation } from './screens/GQAEvaluation';
 import { ThreeGQAModes } from './screens/ThreeGQAModes';
 import { ScientificReportCenter } from './screens/ScientificReportCenter';
 import { R23Laboratory } from './screens/R23Laboratory';
+import { TestRunner } from './screens/TestRunner';
 import { GEOvsLEO } from './screens/GEOvsLEO';
 import { ChannelComparison } from './screens/ChannelComparison';
 import { ReportCenter } from './screens/ReportCenter';
@@ -39,6 +40,7 @@ export default function App() {
             <Route path="three-gqa" element={<ThreeGQAModes />} />
             <Route path="reports-pro" element={<ScientificReportCenter />} />
             <Route path="r23-lab" element={<R23Laboratory />} />
+            <Route path="test-runner" element={<TestRunner />} />
             <Route path="geo-leo" element={<GEOvsLEO />} />
             <Route path="channels" element={<ChannelComparison />} />
             <Route path="reports" element={<ReportCenter />} />
