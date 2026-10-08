@@ -6,11 +6,12 @@ GEOOBS-AI is a scientific platform for generating, evaluating, and managing geom
 
 The system is oriented toward the technical objectives of the EUMETSAT Study EUM2026956 (v2, 7 August 2026) on the creation of observables through AI/ML methods.
 
-## Current Status: Alpha v0.3.0 (Post Master Order Phase 2 — Python Architecture)
+## Current Status: Alpha v0.4.0 (Scientific Reporting Center)
 
 ### What is operational
 
-- ✅ Full web interface with 16 scientific screens
+- ✅ Full web interface with 17 scientific screens
+- ✅ Scientific Reporting Center with PDF/XLSX generation
 - ✅ Three independent GQA engines (Absolute, Interchannel, Temporal)
 - ✅ Synthetic data generation with known geometric displacements
 - ✅ Shi-Tomasi corner detection (TypeScript implementation)
@@ -19,12 +20,14 @@ The system is oriented toward the technical objectives of the EUMETSAT Study EUM
 - ✅ RANSAC affine estimation
 - ✅ Observable generation with full metadata schema
 - ✅ Geometric Quality Assessment (GQA) metrics
-- ✅ Export to JSON, CSV, and plain text reports
+- ✅ Export to JSON, CSV, PDF, XLSX, and plain text reports
 - ✅ Complete audit trail and traceability
 - ✅ Deterministic synthetic test suite
-- ✅ Automated test runner (15+ tests)
+- ✅ Automated test runner (22+ tests)
 - ✅ Requirements compliance matrix (R1-R49)
 - ✅ AI usage approval register (R36 governance)
+- ✅ 16 report categories with professional formatting
+- ✅ 24-sheet XLSX workbooks with structured data
 
 ### What is pending
 
@@ -101,6 +104,13 @@ This enables validation of displacement estimation accuracy against known truth.
 - [INSTRUMENT_DATA_INTERFACES.md](docs/INSTRUMENT_DATA_INTERFACES.md) — FCI/METimage interfaces
 - [MODEL_EXPORT_AND_L1_INTEGRATION.md](docs/MODEL_EXPORT_AND_L1_INTEGRATION.md) — ONNX/L1 integration
 - [COMPUTATIONAL_RESOURCE_ESTIMATE.md](docs/COMPUTATIONAL_RESOURCE_ESTIMATE.md) — Resource requirements
+
+### Reporting System Documentation
+- [REPORTING_ARCHITECTURE.md](docs/REPORTING_ARCHITECTURE.md) — Report generation architecture
+- [PDF_REPORT_SPECIFICATION.md](docs/PDF_REPORT_SPECIFICATION.md) — PDF format specification
+- [XLSX_REPORT_SPECIFICATION.md](docs/XLSX_REPORT_SPECIFICATION.md) — XLSX format specification
+- [REPORT_VALIDATION_TESTS.md](docs/REPORT_VALIDATION_TESTS.md) — Report generation test results
+- [REPORT_CENTER_EXECUTION_REPORT.md](REPORT_CENTER_EXECUTION_REPORT.md) — Implementation report
 
 ## License
 

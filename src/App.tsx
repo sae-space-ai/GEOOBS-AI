@@ -11,6 +11,7 @@ import { FeatureDetector } from './screens/FeatureDetector';
 import { ObservableExplorer } from './screens/ObservableExplorer';
 import { GQAEvaluation } from './screens/GQAEvaluation';
 import { ThreeGQAModes } from './screens/ThreeGQAModes';
+import { ScientificReportCenter } from './screens/ScientificReportCenter';
 import { GEOvsLEO } from './screens/GEOvsLEO';
 import { ChannelComparison } from './screens/ChannelComparison';
 import { ReportCenter } from './screens/ReportCenter';
@@ -35,6 +36,7 @@ export default function App() {
             <Route path="observables" element={<ObservableExplorer />} />
             <Route path="gqa" element={<GQAEvaluation />} />
             <Route path="three-gqa" element={<ThreeGQAModes />} />
+            <Route path="reports-pro" element={<ScientificReportCenter />} />
             <Route path="geo-leo" element={<GEOvsLEO />} />
             <Route path="channels" element={<ChannelComparison />} />
             <Route path="reports" element={<ReportCenter />} />
