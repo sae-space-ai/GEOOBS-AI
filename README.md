@@ -6,13 +6,17 @@ GEOOBS-AI is a scientific platform for generating, evaluating, and managing geom
 
 The system is oriented toward the technical objectives of the EUMETSAT Study EUM2026956 (v2, 7 August 2026) on the creation of observables through AI/ML methods.
 
-## Current Status: Alpha v0.4.0 (Scientific Reporting Center)
+## Current Status: Alpha v0.5.0 (Post-Audit with Full Integration)
 
 ### What is operational
 
 - ✅ Full web interface with 17 scientific screens
 - ✅ Scientific Reporting Center with PDF/XLSX generation
 - ✅ Three independent GQA engines (Absolute, Interchannel, Temporal)
+- ✅ ML Training Engine with train/validation split
+- ✅ Scientific Validation Engine with 5 validation suites
+- ✅ Performance Monitoring Engine with benchmarks
+- ✅ Integration Test Suite (end-to-end validation)
 - ✅ Synthetic data generation with known geometric displacements
 - ✅ Shi-Tomasi corner detection (TypeScript implementation)
 - ✅ ORB feature detection (FAST + BRIEF, TypeScript implementation)
@@ -28,18 +32,19 @@ The system is oriented toward the technical objectives of the EUMETSAT Study EUM
 - ✅ AI usage approval register (R36 governance)
 - ✅ 16 report categories with professional formatting
 - ✅ 24-sheet XLSX workbooks with structured data
+- ✅ Full audit documentation (AUDIT_ALPHA_040.md)
 
 ### What is pending
 
-- ⏳ FCI/METimage native format adapters (requires Python/xarray)
-- ⏳ Backend API (Node.js/Fastify)
-- ⏳ Scientific service (Python/FastAPI)
+- ⏳ FCI/METimage native format adapters (requires authentic products)
+- ⏳ Python service execution (structure complete, runtime pending)
 - ⏳ Deep learning detectors (PyTorch: SuperPoint, R2D2, LoFTR)
 - ⏳ ONNX model export and inference
 - ⏳ Docker Compose deployment
 - ⏳ PostgreSQL and S3 storage integration
-- ⏳ Validation with authentic EUMETSAT products
+- ⏳ Validation with authentic EUMETSAT products (BLOCKED_EXTERNAL)
 - ⏳ GSoW EUM/RSP/SOW/18/985385 review
+- ⏳ R36 AI authorization from EUMETSAT (BLOCKED_EXTERNAL)
 
 ## Quick Start
 
