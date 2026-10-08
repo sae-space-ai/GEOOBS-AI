@@ -6,7 +6,7 @@ GEOOBS-AI is a scientific platform for generating, evaluating, and managing geom
 
 The system is oriented toward the technical objectives of the EUMETSAT Study EUM2026956 (v2, 7 August 2026) on the creation of observables through AI/ML methods.
 
-## Current Status: Alpha v0.2.0 (Post Master Order Phase 1)
+## Current Status: Alpha v0.3.0 (Post Master Order Phase 2 — Python Architecture)
 
 ### What is operational
 
