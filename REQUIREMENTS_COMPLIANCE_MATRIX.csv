@@ -1,0 +1,50 @@
+ID,Scope,Responsible Module,Code Reference,Acceptance Test,Evidence,Status,External Dependencies,Technical Risk,Deliverable
+R01,Absolute navigation GQA: measure displacements between observed positions and independent geographic references,engine/gqa_absolute.ts,computeAbsoluteGQA(),Recover known displacements within 1px RMSE on synthetic data,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D4/D7
+R02,Interchannel registration GQA: compare positions of corresponding features across spectral channels,engine/gqa_interchannel.ts,computeInterchannelGQA(),Match features between VIS and IR channels with quantified uncertainty,TEST_REPORT.md,TESTED_LOCALLY,None,Medium - requires multi-band data,D4/D7
+R03,Temporal registration GQA: compare corresponding features between successive acquisitions,engine/gqa_temporal.ts,computeTemporalGQA(),Track features across time steps with known displacements,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D4/D7
+R04,Observable canonical schema with all required fields,src/types/index.ts,GeometricObservable interface,All 30+ fields present and populated,src/types/index.ts,IMPLEMENTED_NOT_TESTED,None,Low,D4/D7
+R05,Shi-Tomasi corner detection,engine/scientific.ts,shiTomasiDetect(),Detect corners with configurable quality and NMS,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D4
+R06,ORB feature detection (FAST+BRIEF),engine/scientific.ts,orbDetect(),Detect features with binary descriptors,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D4
+R07,RANSAC affine estimation,engine/scientific.ts,ransacAffine(),Estimate affine transform robustly with configurable iterations,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D4
+R08,Feature matching with ratio test,engine/scientific.ts,matchFeatures(),Lowe's ratio test with configurable threshold,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D4
+R09,Synthetic scene generation with known displacements,engine/synthetic.ts,generateSyntheticScene(),Deterministic scenes with ground truth,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D4/D7
+R10,GQA metrics: bias RMSE percentiles coverage,engine/scientific.ts,computeGQA(),All metrics computed correctly,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D4
+R11,Export observables to JSON,screens/ObservableExplorer.tsx,exportJSON(),Valid JSON file with full schema,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D4
+R12,Export observables to CSV,screens/ObservableExplorer.tsx,exportCSV(),Valid CSV with headers,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D4
+R13,Export observables to NetCDF,Planned Python service,Not yet implemented,NetCDF-CF compliant file,PENDING,None,High - requires Python/xarray,Medium,D7
+R14,FCI L1b data adapter,Planned Python service,Not yet implemented,Read authentic FCI L1b file,PENDING,Authentic FCI products,High - format not verified,High,D4/D7
+R15,METimage L1b data adapter,Planned Python service,Not yet implemented,Read authentic METimage L1b file,PENDING,Authentic METimage products,High - format not verified,High,D4/D7
+R16,AVHRR data adapter (complementary),Planned Python service,Not yet implemented,Read authentic AVHRR file,PENDING,Authentic AVHRR products,Medium,Medium,D7
+R17,Cloud detection and masking,engine/scientific.ts,Synthetic only,Mask cloudy pixels before feature detection,PENDING,Real cloud detection algorithm,Medium - requires validation,Medium,D4
+R18,Day/night condition handling,engine/scientific.ts,dayNightCondition field,Tag observables with illumination condition,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D4
+R19,Multi-spectral channel comparison,screens/ChannelComparison.tsx,Based on specs,Compare detectability across channels,PENDING,Authentic multi-band data,Medium,Medium,D6
+R20,GEO vs LEO comparative analysis,screens/GEOvsLEO.tsx,Based on specs,Compare observation characteristics,PENDING,Authentic GEO and LEO data,Medium,Medium,D6
+R21,Image acquisition via web interface,screens/ImageAcquisition.tsx,File upload with validation,Load images with type/size validation,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D3/D4
+R22,Multispectral image viewer with overlays,screens/MultispectralViewer.tsx,Canvas rendering with feature/vector overlays,Visualize features and displacement vectors,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D3/D4
+R23,Feature detection laboratory,screens/FeatureDetector.tsx,Interactive detection with parameter control,Detect and match features interactively,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D3/D4
+R24,Observable explorer with filtering,screens/ObservableExplorer.tsx,Filter by status method quality,Browse and filter observables,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D3/D4
+R25,GQA evaluation dashboard,screens/GQAEvaluation.tsx,Charts and metrics display,Visualize GQA results with distributions,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D3/D4
+R26,AI laboratory for batch experiments,screens/AILaboratory.tsx,Batch experiment runner,Run multiple configurations,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D4/D5
+R27,Training center with reproducibility,screens/TrainingCenter.tsx,Seeded training with parameter logging,Reproducible experiments,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D5/D7
+R28,Model catalog with versioning,screens/ModelAdmin.tsx,Model entries with license/metrics,Track model versions and licenses,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D4/D7
+R29,Audit trail and traceability,store/AppContext.tsx,Full operation logging,Every operation logged with timestamp,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D6/D8
+R30,Report generation center,screens/ReportCenter.tsx,Export full/GQA/observables/experiments,Generate downloadable reports,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D1/D2/D6
+R31,System status and dependency inventory,screens/SystemStatus.tsx,Component health and dependency list,Monitor system components,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D8
+R32,Python 3 scientific core,Planned Python service,Not yet implemented,All scientific ops runnable via Python CLI,PENDING,None,High - requires Python development,High,D4/D7
+R33,Git repository preparation for EUMETSAT,Infrastructure,.gitignore and structure,Repository ready for EUMETSAT Git hosting,PENDING,EUMETSAT Git access,Medium,Low,D4
+R34,Near-real-time monitoring system,Planned Python service,Not yet implemented,Automated reception and analysis,PENDING,Operational data feed,High,High,D4/D7
+R35,Geometric degradation detection,Planned Python service,Not yet implemented,Detect statistical degradation via thresholds,PENDING,None,Medium,Medium,D4
+R36,AI coding assistant authorization,AI_USAGE_APPROVAL_REGISTER.md,PENDING_AUTHORIZATION,Obtain written EUMETSAT authorization,PENDING,EUMETSAT authorization,High - blocking,High,All deliverables
+R37,AI tool register,AI_USAGE_APPROVAL_REGISTER.md,Register created,Document all AI tools used,PENDING,Authorization first,Medium,Low,All deliverables
+R38,Human review of AI output,Governance process,Not yet implemented,All AI output reviewed by humans,PENDING,Authorization first,Medium,Medium,All deliverables
+R39,License audit of dependencies,screens/SystemStatus.tsx,Dependency inventory created,Verify all licenses compatible,PENDING,Full dependency scan,Low,Low,D8
+R40,Vulnerability review,Planned security scan,Not yet performed,Security scan passed,PENDING,Security tools,Low,Low,D8
+R41,Code originality analysis,Governance process,Not yet performed,Originality verified,PENDING,Originality tools,Low,Low,D8
+R42,Sensitive information protection,docs/SECURITY_AND_SOVEREIGNTY.md,Local-first design,No sensitive data leaked,PENDING,Classification procedures,Low,Low,D8
+R43,Traceability of all operations,store/AppContext.tsx,Audit trail implemented,Full chain traceable,TEST_REPORT.md,TESTED_LOCALLY,None,Low,D6/D8
+R44,Responsibility documentation,docs/ARCHITECTURE.md,Roles defined,RACI matrix complete,PENDING,Contract start,Low,Low,D8
+R45,AI output validation,Testing framework,Not yet implemented,All AI outputs validated,PENDING,Authorization first,Medium,Medium,All deliverables
+R46,Version control of AI-assisted code,Infrastructure,Git planned,All changes tracked,PENDING,Repository access,Low,Low,D4
+R47,AI usage reporting,AI_USAGE_APPROVAL_REGISTER.md,Register mechanism defined,Regular reports produced,PENDING,Authorization first,Low,Low,All deliverables
+R48,Deliverable D1-D9 structure,docs/,Document placeholders,All deliverables structured,PENDING,Contract start,Medium,Low,All deliverables
+R49,Computational efficiency measurement,Planned benchmark suite,Not yet implemented,Measure CPU/GPU/memory/latency,PENDING,None,Medium,Medium,D6/D8
