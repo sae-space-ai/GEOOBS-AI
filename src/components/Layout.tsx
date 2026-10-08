@@ -9,6 +9,7 @@ const navItems = [
   { path: '/features', label: 'Feature Detection', icon: '🎯' },
   { path: '/observables', label: 'Observables', icon: '📐' },
   { path: '/gqa', label: 'GQA Evaluation', icon: '✅' },
+  { path: '/three-gqa', label: 'Three GQA Engines', icon: '📐' },
   { path: '/ai-lab', label: 'AI Laboratory', icon: '🧪' },
   { path: '/training', label: 'Training Center', icon: '🏋️' },
   { path: '/geo-leo', label: 'GEO vs LEO', icon: '🌍' },

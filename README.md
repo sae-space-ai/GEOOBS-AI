@@ -6,11 +6,12 @@ GEOOBS-AI is a scientific platform for generating, evaluating, and managing geom
 
 The system is oriented toward the technical objectives of the EUMETSAT Study EUM2026956 (v2, 7 August 2026) on the creation of observables through AI/ML methods.
 
-## Current Status: Alpha v0.1.0
+## Current Status: Alpha v0.2.0 (Post Master Order Phase 1)
 
 ### What is operational
 
-- ✅ Full web interface with 15 scientific screens
+- ✅ Full web interface with 16 scientific screens
+- ✅ Three independent GQA engines (Absolute, Interchannel, Temporal)
 - ✅ Synthetic data generation with known geometric displacements
 - ✅ Shi-Tomasi corner detection (TypeScript implementation)
 - ✅ ORB feature detection (FAST + BRIEF, TypeScript implementation)
@@ -21,6 +22,9 @@ The system is oriented toward the technical objectives of the EUMETSAT Study EUM
 - ✅ Export to JSON, CSV, and plain text reports
 - ✅ Complete audit trail and traceability
 - ✅ Deterministic synthetic test suite
+- ✅ Automated test runner (15+ tests)
+- ✅ Requirements compliance matrix (R1-R49)
+- ✅ AI usage approval register (R36 governance)
 
 ### What is pending
 
@@ -79,14 +83,24 @@ This enables validation of displacement estimation accuracy against known truth.
 
 ## Documentation
 
+### Contractual Compliance
+- [REQUIREMENTS_COMPLIANCE_MATRIX.md](REQUIREMENTS_COMPLIANCE_MATRIX.md) — Full R1-R49 traceability matrix
+- [REQUIREMENTS_COMPLIANCE_MATRIX.csv](REQUIREMENTS_COMPLIANCE_MATRIX.csv) — Machine-readable matrix
+- [AI_USAGE_APPROVAL_REGISTER.md](AI_USAGE_APPROVAL_REGISTER.md) — R36 AI governance register
+
+### Technical Documentation
 - [ARCHITECTURE.md](docs/ARCHITECTURE.md) — System architecture
 - [OBSERVABLE_SCHEMA.md](docs/OBSERVABLE_SCHEMA.md) — Observable data model
 - [ML_METHODOLOGY.md](docs/ML_METHODOLOGY.md) — ML approach and limitations
 - [GEOMETRIC_QUALITY_ASSESSMENT.md](docs/GEOMETRIC_QUALITY_ASSESSMENT.md) — GQA methodology
-- [EUMETSAT_REQUIREMENTS_TRACEABILITY.md](docs/EUMETSAT_REQUIREMENTS_TRACEABILITY.md) — Requirements matrix
+- [EUMETSAT_REQUIREMENTS_TRACEABILITY.md](docs/EUMETSAT_REQUIREMENTS_TRACEABILITY.md) — Requirements matrix (legacy)
 - [SECURITY_AND_SOVEREIGNTY.md](docs/SECURITY_AND_SOVEREIGNTY.md) — Security principles
 - [KNOWN_LIMITATIONS.md](docs/KNOWN_LIMITATIONS.md) — Current limitations
 - [TEST_REPORT.md](docs/TEST_REPORT.md) — Test results
+- [TRAINING_AND_VALIDATION_PLAN.md](docs/TRAINING_AND_VALIDATION_PLAN.md) — Validation strategy
+- [INSTRUMENT_DATA_INTERFACES.md](docs/INSTRUMENT_DATA_INTERFACES.md) — FCI/METimage interfaces
+- [MODEL_EXPORT_AND_L1_INTEGRATION.md](docs/MODEL_EXPORT_AND_L1_INTEGRATION.md) — ONNX/L1 integration
+- [COMPUTATIONAL_RESOURCE_ESTIMATE.md](docs/COMPUTATIONAL_RESOURCE_ESTIMATE.md) — Resource requirements
 
 ## License
 

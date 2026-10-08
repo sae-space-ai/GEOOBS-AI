@@ -1,6 +1,6 @@
 # Known Limitations — GEOOBS-AI
 
-## Alpha v0.1.0
+## Alpha v0.2.0 (Post Master Order Phase 1)
 
 ### Scientific Limitations
 

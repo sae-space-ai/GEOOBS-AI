@@ -50,6 +50,10 @@ export function Dashboard() {
           <h3 className="text-green-300 font-semibold">✅ Compute GQA Metrics</h3>
           <p className="text-gray-400 text-sm mt-2">Calculate geometric quality assessment metrics: bias, RMSE, percentiles, spatial coverage.</p>
         </Link>
+        <Link to="/three-gqa" className="bg-gradient-to-br from-amber-900/30 to-amber-800/10 border border-amber-800/50 rounded-lg p-5 hover:border-amber-600 transition-colors">
+          <h3 className="text-amber-300 font-semibold">📐 Three GQA Engines</h3>
+          <p className="text-gray-400 text-sm mt-2">Absolute Navigation, Interchannel Registration, and Temporal Registration GQA modes with automated tests.</p>
+        </Link>
         <Link to="/reports" className="bg-gradient-to-br from-purple-900/30 to-purple-800/10 border border-purple-800/50 rounded-lg p-5 hover:border-purple-600 transition-colors">
           <h3 className="text-purple-300 font-semibold">📋 Generate Report</h3>
           <p className="text-gray-400 text-sm mt-2">Export comprehensive reports with observables, GQA results, and validation status.</p>
