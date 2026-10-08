@@ -11,6 +11,7 @@ const navItems = [
   { path: '/gqa', label: 'GQA Evaluation', icon: '✅' },
   { path: '/three-gqa', label: 'Three GQA Engines', icon: '📐' },
   { path: '/reports-pro', label: 'Scientific Reports', icon: '📑' },
+  { path: '/r23-lab', label: 'R23 Distortion Lab', icon: '🔬' },
   { path: '/ai-lab', label: 'AI Laboratory', icon: '🧪' },
   { path: '/training', label: 'Training Center', icon: '🏋️' },
   { path: '/geo-leo', label: 'GEO vs LEO', icon: '🌍' },

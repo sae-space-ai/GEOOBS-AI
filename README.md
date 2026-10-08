@@ -6,33 +6,35 @@ GEOOBS-AI is a scientific platform for generating, evaluating, and managing geom
 
 The system is oriented toward the technical objectives of the EUMETSAT Study EUM2026956 (v2, 7 August 2026) on the creation of observables through AI/ML methods.
 
-## Current Status: Alpha v0.5.0 (Post-Audit with Full Integration)
+## Current Status: Alpha v0.6.0 (R23 Distortion Recovery Laboratory)
 
 ### What is operational
 
-- ✅ Full web interface with 17 scientific screens
+- ✅ Full web interface with 18 scientific screens
+- ✅ **R23 Distortion Recovery Laboratory** with 10 distortion types
 - ✅ Scientific Reporting Center with PDF/XLSX generation
 - ✅ Three independent GQA engines (Absolute, Interchannel, Temporal)
 - ✅ ML Training Engine with train/validation split
 - ✅ Scientific Validation Engine with 5 validation suites
 - ✅ Performance Monitoring Engine with benchmarks
 - ✅ Integration Test Suite (end-to-end validation)
+- ✅ Algorithm Benchmark (ORB vs Shi-Tomasi vs RANSAC)
 - ✅ Synthetic data generation with known geometric displacements
 - ✅ Shi-Tomasi corner detection (TypeScript implementation)
 - ✅ ORB feature detection (FAST + BRIEF, TypeScript implementation)
 - ✅ Feature matching with Hamming distance
 - ✅ RANSAC affine estimation
-- ✅ Observable generation with full metadata schema
+- ✅ Observable generation with full metadata schema (33 fields)
 - ✅ Geometric Quality Assessment (GQA) metrics
 - ✅ Export to JSON, CSV, PDF, XLSX, and plain text reports
 - ✅ Complete audit trail and traceability
 - ✅ Deterministic synthetic test suite
-- ✅ Automated test runner (22+ tests)
-- ✅ Requirements compliance matrix (R1-R49)
+- ✅ Automated test runner (33+ tests)
+- ✅ Requirements compliance matrix (R1-R49) — 49.0% operational
 - ✅ AI usage approval register (R36 governance)
 - ✅ 16 report categories with professional formatting
 - ✅ 24-sheet XLSX workbooks with structured data
-- ✅ Full audit documentation (AUDIT_ALPHA_040.md)
+- ✅ Full audit documentation (AUDIT_ALPHA_040.md, EXECUTION_REPORT_ALPHA_V060.md)
 
 ### What is pending
 
