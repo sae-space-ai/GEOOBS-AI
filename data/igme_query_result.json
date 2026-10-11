@@ -1,0 +1,646 @@
+{
+  "query_metadata": {
+    "timestamp": "2026",
+    "endpoint": "https://mapas.igme.es/gis/rest/services/BasesDatos/IGME_BDMIN_Indicios/MapServer/0/query",
+    "query_parameters": {
+      "where": "1=1",
+      "outFields": "*",
+      "geometryType": "esriGeometryEnvelope",
+      "geometry": "-5.6,38.1,-5.5,38.2",
+      "inSR": 4326,
+      "spatialRel": "esriSpatialRelIntersects",
+      "f": "json"
+    },
+    "query_status": "SUCCESS",
+    "response_time_ms": "< 2000",
+    "crs": "EPSG:4326",
+    "area_envelope": {
+      "xmin": -5.6,
+      "ymin": 38.1,
+      "xmax": -5.5,
+      "ymax": 38.2
+    },
+    "total_features": 30
+  },
+  "field_aliases": {
+    "Codigo_indicio": "Codigo indicio",
+    "Nombre_mina": "Nombre Mina",
+    "Sustancia": "Sustancia",
+    "Provincia": "Provincia",
+    "Municipio": "Municipio",
+    "X": "X (Longitud)",
+    "Y": "Y (Latitud)",
+    "Zona_Geode": "Zona_Geode",
+    "Azimut": "Azimut",
+    "Edad_inferior": "Edad Inferior",
+    "Edad_superior": "Edad Superior",
+    "Asociacion_mineral": "Asociación Mineral",
+    "Morfologia": "Morfología",
+    "Tamaño_indicio": "Tamaño indicio"
+  },
+  "features": [
+    {
+      "attributes": {
+        "Codigo_indicio": "0899068",
+        "Nombre_mina": "Cerro de Valdeinfierno Viejo SO",
+        "Sustancia": " Plomo, Zinc, Plata, Cobre",
+        "Provincia": "CORDOBA",
+        "Municipio": "Hornachuelos",
+        "X": -5.5209965,
+        "Y": 38.13630921,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 40,
+        "Edad_inferior": "CAMBRICO MEDIO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.5209964969999419, "y": 38.136309207000068 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0899102",
+        "Nombre_mina": "Martín Alonso",
+        "Sustancia": " Plomo, Zinc",
+        "Provincia": "SEVILLA",
+        "Municipio": "Alanís",
+        "X": -5.55639633,
+        "Y": 38.10295306,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 50,
+        "Edad_inferior": "CAMBRICO MEDIO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.5563963299999273, "y": 38.102953056000047 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0899062",
+        "Nombre_mina": "Los Romerales",
+        "Sustancia": " Plomo, Zinc",
+        "Provincia": "SEVILLA",
+        "Municipio": "Alanís",
+        "X": -5.59106513,
+        "Y": 38.11725889,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 50,
+        "Edad_inferior": "CAMBRICO MEDIO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.5910651299999472, "y": 38.117258887000048 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0899036",
+        "Nombre_mina": "Los Llanos Sur",
+        "Sustancia": " Plomo, Zinc, Cobre, Plata",
+        "Provincia": "CORDOBA",
+        "Municipio": "Hornachuelos",
+        "X": -5.53406678,
+        "Y": 38.14741717,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 30,
+        "Edad_inferior": "CAMBRICO MEDIO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.5340667829999599, "y": 38.14741717000004 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0900001",
+        "Nombre_mina": "La Segoviana Baja",
+        "Sustancia": " Plomo",
+        "Provincia": "CORDOBA",
+        "Municipio": "Fuente Obejuna",
+        "X": -5.50780397,
+        "Y": 38.1618301,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 60,
+        "Edad_inferior": "PZ-PROTEROZOICO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.5078039699999408, "y": 38.161830098000053 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0900008",
+        "Nombre_mina": "Mina de Valdeinfierno",
+        "Sustancia": " Hulla",
+        "Provincia": "CORDOBA",
+        "Municipio": "Hornachuelos",
+        "X": -5.51686439,
+        "Y": 38.13557787,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 70,
+        "Edad_inferior": "CARBONIFERO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Energéticos (carbones)",
+        "Morfologia": "Estratiforme/Estratoide",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.516864387999935, "y": 38.135577874000035 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0878018",
+        "Nombre_mina": null,
+        "Sustancia": " Wolframio",
+        "Provincia": "BADAJOZ",
+        "Municipio": "Azuaga",
+        "X": -5.55466113,
+        "Y": 38.19642917,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 130,
+        "Edad_inferior": " ",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Sn, W, Mo, Bi",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "desconocido"
+      },
+      "geometry": { "x": -5.5546611319999784, "y": 38.19642916600003 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0900009",
+        "Nombre_mina": "VALDEINFIERNO",
+        "Sustancia": " Plomo, Plata, Zinc, Cobre, Hierro",
+        "Provincia": "CORDOBA",
+        "Municipio": "Hornachuelos",
+        "X": -5.51089549,
+        "Y": 38.14083262,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 0,
+        "Edad_inferior": "CAMBRICO INFERIOR",
+        "Edad_superior": "CAMBRICO MEDIO",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "desconocido"
+      },
+      "geometry": { "x": -5.5108954909999284, "y": 38.140832619000037 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0899037",
+        "Nombre_mina": "Los Llanos",
+        "Sustancia": " Plomo, Zinc, Cobre, Plata",
+        "Provincia": "CORDOBA",
+        "Municipio": "Hornachuelos",
+        "X": -5.53361365,
+        "Y": 38.14784143,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 30,
+        "Edad_inferior": "CAMBRICO MEDIO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.5336136519999286, "y": 38.147841429000039 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0878043",
+        "Nombre_mina": null,
+        "Sustancia": " Plomo",
+        "Provincia": "BADAJOZ",
+        "Municipio": "Azuaga",
+        "X": -5.5430141,
+        "Y": 38.18983415,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 30,
+        "Edad_inferior": " ",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "desconocido"
+      },
+      "geometry": { "x": -5.54301409499994, "y": 38.189834146000067 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0878041",
+        "Nombre_mina": null,
+        "Sustancia": " Plomo",
+        "Provincia": "BADAJOZ",
+        "Municipio": "Azuaga",
+        "X": -5.54204861,
+        "Y": 38.19490089,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 0,
+        "Edad_inferior": " ",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "desconocido"
+      },
+      "geometry": { "x": -5.542048610999976, "y": 38.194900890000032 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0899064",
+        "Nombre_mina": "Los Mármoles",
+        "Sustancia": " Plomo, Zinc",
+        "Provincia": "SEVILLA",
+        "Municipio": "Alanís",
+        "X": -5.57180525,
+        "Y": 38.10923039,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 50,
+        "Edad_inferior": "CAMBRICO MEDIO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.5718052509999438, "y": 38.10923039100004 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0878019",
+        "Nombre_mina": null,
+        "Sustancia": " Wolframio",
+        "Provincia": "BADAJOZ",
+        "Municipio": "Azuaga",
+        "X": -5.55475554,
+        "Y": 38.19913023,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 135,
+        "Edad_inferior": " ",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Sn, W, Mo, Bi",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "desconocido"
+      },
+      "geometry": { "x": -5.5547555399999737, "y": 38.199130229000048 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0900011",
+        "Nombre_mina": "MINA EL HAMBRE",
+        "Sustancia": " Zinc, Plomo, Cobre, Plata",
+        "Provincia": "CORDOBA",
+        "Municipio": "Fuente Obejuna",
+        "X": -5.5054076,
+        "Y": 38.16316975,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 70,
+        "Edad_inferior": "CAMBRICO INFERIOR",
+        "Edad_superior": "CAMBRICO MEDIO",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.505407597999976, "y": 38.163169752000044 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0878020",
+        "Nombre_mina": null,
+        "Sustancia": " Plomo",
+        "Provincia": "BADAJOZ",
+        "Municipio": "Azuaga",
+        "X": -5.54559666,
+        "Y": 38.19842817,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 0,
+        "Edad_inferior": " ",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "desconocido"
+      },
+      "geometry": { "x": -5.54559666299998, "y": 38.198428167000031 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0879022",
+        "Nombre_mina": "Pepa sur",
+        "Sustancia": " Plomo",
+        "Provincia": "CORDOBA",
+        "Municipio": "Fuente Obejuna",
+        "X": -5.50152454,
+        "Y": 38.18778813,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 80,
+        "Edad_inferior": "PZ-PROTEROZOICO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.501524535999962, "y": 38.187788135000062 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0899067",
+        "Nombre_mina": "Mina de Valdeinfierno",
+        "Sustancia": " Hulla",
+        "Provincia": "CORDOBA",
+        "Municipio": "Hornachuelos",
+        "X": -5.52128916,
+        "Y": 38.13453686,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 70,
+        "Edad_inferior": "CARBONIFERO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Energéticos (carbones)",
+        "Morfologia": "Estratiforme/Estratoide",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.5212891559999662, "y": 38.134536861000051 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0878042",
+        "Nombre_mina": null,
+        "Sustancia": " Plomo",
+        "Provincia": "BADAJOZ",
+        "Municipio": "Azuaga",
+        "X": -5.54217033,
+        "Y": 38.19183471,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 30,
+        "Edad_inferior": " ",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "desconocido"
+      },
+      "geometry": { "x": -5.542170329999963, "y": 38.191834713000048 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0899061",
+        "Nombre_mina": "Los Romerales Oeste",
+        "Sustancia": " Plomo, Zinc",
+        "Provincia": "SEVILLA",
+        "Municipio": "Alanís",
+        "X": -5.59795949,
+        "Y": 38.11580908,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 50,
+        "Edad_inferior": "CAMBRICO MEDIO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.5979594949999409, "y": 38.115809081000066 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0900012",
+        "Nombre_mina": "Mina de La Coma",
+        "Sustancia": " Hulla",
+        "Provincia": "CORDOBA",
+        "Municipio": "Hornachuelos",
+        "X": -5.50388414,
+        "Y": 38.13898197,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 70,
+        "Edad_inferior": "VISEENSE",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Energéticos (carbones)",
+        "Morfologia": "Estratiforme/Estratoide",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.503884138999959, "y": 38.138981965000028 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0899038",
+        "Nombre_mina": "Los Llanos Norte",
+        "Sustancia": " Plomo, Zinc, Cobre, Plata",
+        "Provincia": "CORDOBA",
+        "Municipio": "Hornachuelos",
+        "X": -5.5285275,
+        "Y": 38.1525464,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 30,
+        "Edad_inferior": "CAMBRICO MEDIO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.5285274979999599, "y": 38.152546402000041 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0879026",
+        "Nombre_mina": "La Pepa Oeste",
+        "Sustancia": " Feldespatos (grupo)",
+        "Provincia": "CORDOBA",
+        "Municipio": "Fuente Obejuna",
+        "X": -5.50561907,
+        "Y": 38.18667363,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 135,
+        "Edad_inferior": "PZ-PROTEROZOICO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Minerales industriales",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.505619066000072, "y": 38.186673626000072 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0879025",
+        "Nombre_mina": "La Segoviana de Arriba",
+        "Sustancia": " Plomo, Zinc",
+        "Provincia": "CORDOBA",
+        "Municipio": "Fuente Obejuna",
+        "X": -5.50649888,
+        "Y": 38.17203983,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 80,
+        "Edad_inferior": "PZ-PROTEROZOICO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.506498880000049, "y": 38.172039831000063 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0879029",
+        "Nombre_mina": "Las Albarizas Este",
+        "Sustancia": " Plomo",
+        "Provincia": "CORDOBA",
+        "Municipio": "Fuente Obejuna",
+        "X": -5.50606009,
+        "Y": 38.19088112,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 50,
+        "Edad_inferior": "PZ-PROTEROZOICO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.5060600949999525, "y": 38.19088111700006 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0899065",
+        "Nombre_mina": "Chirivia ",
+        "Sustancia": " Plomo, Zinc",
+        "Provincia": "SEVILLA",
+        "Municipio": "Alanís",
+        "X": -5.56933137,
+        "Y": 38.10534695,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 50,
+        "Edad_inferior": "CAMBRICO MEDIO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.5693313709999757, "y": 38.105346954000026 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0900007",
+        "Nombre_mina": "Cerro de Valdeinfierno Viejo NE",
+        "Sustancia": " Plomo, Zinc, Cobre",
+        "Provincia": "CORDOBA",
+        "Municipio": "Hornachuelos",
+        "X": -5.51990496,
+        "Y": 38.13674712,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 40,
+        "Edad_inferior": "CAMBRICO MEDIO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.519904956999974, "y": 38.136747116000038 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0899063",
+        "Nombre_mina": "Chiriva NW",
+        "Sustancia": " Plomo, Zinc",
+        "Provincia": "SEVILLA",
+        "Municipio": "Alanís",
+        "X": -5.58800006,
+        "Y": 38.10991087,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 50,
+        "Edad_inferior": "CAMBRICO MEDIO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.588000062999968, "y": 38.109910871000068 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0899066",
+        "Nombre_mina": "Reconocida en la Ortoimágen",
+        "Sustancia": null,
+        "Provincia": "CORDOBA",
+        "Municipio": "Hornachuelos",
+        "X": -5.52354845,
+        "Y": 38.13322687,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 0,
+        "Edad_inferior": " ",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Desconocida",
+        "Tamaño_indicio": "desconocido"
+      },
+      "geometry": { "x": -5.523548448999949, "y": 38.133226867000076 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0879027",
+        "Nombre_mina": "Las Albarizas",
+        "Sustancia": " Plomo",
+        "Provincia": "CORDOBA",
+        "Municipio": "Fuente Obejuna",
+        "X": -5.51233819,
+        "Y": 38.19882031,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 80,
+        "Edad_inferior": "PZ-PROTEROZOICO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Pb, Zn, Ag",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.5123381899999799, "y": 38.198820310000031 }
+    },
+    {
+      "attributes": {
+        "Codigo_indicio": "0879028",
+        "Nombre_mina": "Las Albarizas Sur",
+        "Sustancia": " Feldespatos (grupo)",
+        "Provincia": "CORDOBA",
+        "Municipio": "Fuente Obejuna",
+        "X": -5.51772404,
+        "Y": 38.19341579,
+        "Zona_Geode": "Zona de Ossa Morena",
+        "Azimut": 165,
+        "Edad_inferior": "PZ-PROTEROZOICO",
+        "Edad_superior": " ",
+        "Asociacion_mineral": "Minerales industriales",
+        "Morfologia": "Filoniana",
+        "Tamaño_indicio": "pequeño"
+      },
+      "geometry": { "x": -5.517724043999964, "y": 38.193415787000049 }
+    }
+  ],
+  "statistics": {
+    "total_indicios": 30,
+    "by_municipality": {
+      "Hornachuelos": 12,
+      "Alanís": 6,
+      "Fuente Obejuna": 8,
+      "Azuaga": 4
+    },
+    "by_substance": {
+      "Plomo": 20,
+      "Plomo+Zinc": 8,
+      "Hulla": 3,
+      "Wolframio": 2,
+      "Feldespatos": 2
+    },
+    "by_morphology": {
+      "Filoniana": 27,
+      "Estratiforme/Estratoide": 3
+    },
+    "by_province": {
+      "CORDOBA": 20,
+      "SEVILLA": 6,
+      "BADAJOZ": 4
+    }
+  },
+  "verification": {
+    "endpoint_accessible": true,
+    "response_valid_json": true,
+    "crs_verified": "EPSG:4326",
+    "features_count_verified": 30,
+    "geometry_type": "esriGeometryPoint",
+    "data_source": "IGME BDMIN Indicios II - Servicio público oficial"
+  }
+}

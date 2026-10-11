@@ -13,6 +13,7 @@ const navItems = [
   { path: '/reports-pro', label: 'Scientific Reports', icon: '📑' },
   { path: '/r23-lab', label: 'R23 Distortion Lab', icon: '🔬' },
   { path: '/test-runner', label: 'Test Runner', icon: '🧪' },
+  { path: '/mineral-01', label: 'MINERAL-01 Mission', icon: '⛏️' },
   { path: '/ai-lab', label: 'AI Laboratory', icon: '🧪' },
   { path: '/training', label: 'Training Center', icon: '🏋️' },
   { path: '/geo-leo', label: 'GEO vs LEO', icon: '🌍' },
